@@ -1,8 +1,12 @@
 aid: stailer
 name: Stailer
-description: 'Stailer is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Stailer (ステイラー) is a retail-commerce platform built by 10X, Inc. (株式会社10X) that lets
+  Japanese supermarket, drugstore, and other retail chains vertically launch and operate their own
+  branded e-commerce and online-grocery services. It provides the consumer storefront apps, order
+  management, in-store picking and fulfillment, and delivery operations that let established
+  brick-and-mortar retailers stand up online shopping quickly. Stailer is a B2B SaaS offering sold
+  through direct enterprise engagement; as of this enrichment pass it exposes no public developer
+  API, documentation portal, SDKs, or /.well-known discovery surface.'
 url: https://raw.githubusercontent.com/api-evangelist/stailer/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +14,43 @@ x-backed-by:
 - dcm-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://10x.co.jp/ogp.jpg
 tags:
 - Company
 - Enterprise
+- Retail
+- E-commerce
+- Grocery
+- Japan
+- SaaS
+- Digital Transformation
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/stailer-domain-security.yml
 - type: Website
   url: https://stailer.jp/
